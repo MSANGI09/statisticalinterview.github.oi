@@ -53,7 +53,7 @@
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 text-center">
-                <h1 class="display-4">M/S StatisticalInterview Simulator</h1>
+                <h1 class="display-4">M/S Statistical Interview Simulator</h1>
                 <p class="lead">Practice answering common statistics interview questions</p>
             </div>
         </div>
@@ -78,7 +78,7 @@
                 <div class="card question-card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <span id="questionCounter">Question 1/10</span>
-                        <span class="timer" id="timer">02:00</span>
+                        <span class="timer" id="timer">02:30</span>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title" id="question">Question text will appear here</h5>
@@ -406,7 +406,7 @@ let answerMode = 'text';
 let mediaRecorder;
 let recordedChunks = [];
 let timerInterval;
-let timeLeft = 120; // 2 minutes per question
+let timeLeft = 150; // 2 minutes per question
 
 // Shuffle questions
 function shuffleArray(array) {
@@ -556,7 +556,7 @@ nextQuestion.addEventListener('click', function() {
         textAnswerBtn.click();
         
         // Reset timer
-        timeLeft = 120;
+        timeLeft = 150;
         updateTimerDisplay();
         startTimer();
     } else {
@@ -594,7 +594,7 @@ restartBtn.addEventListener('click', function() {
     textAnswer.value = '';
     
     // Reset timer
-    timeLeft = 120;
+    timeLeft = 150;
     updateTimerDisplay();
     startTimer();
 });
